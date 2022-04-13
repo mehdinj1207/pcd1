@@ -1,0 +1,30 @@
+
+.navbar-light .navbar-nav .nav-link
+{
+    color: var(--secondary-color);
+}
+.navbar-light .navbar-nav .nav-link.active-link
+{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.high{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #261d51;
+}
+ul{
+    padding-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+

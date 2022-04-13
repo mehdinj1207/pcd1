@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+/*
+body
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}*/
+:root
+{
+    --primary-color:#261d51;
+    --secondary-color:#162328;
+}
+body
+{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}

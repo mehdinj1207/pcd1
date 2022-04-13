@@ -1,0 +1,96 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" routerLink="home"><img src="../../../assets/img/welearn4.png" sizes="20px" alt="..." height="36"> <span class="high">We Learn</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="home" style="
+        background-color: #261d51;
+      outline: none;
+      border: none;
+      color: #fff;
+      padding: 8px 22px;
+      border-radius: 20px;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      font-weight: bold;" *ngIf="!service.isloggedIn">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" routerLink="home-student" style="
+      background-color: #261d51;
+    outline: none;
+    border: none;
+    color: #fff;
+    
+    border-radius: 50px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;" *ngIf="service.isloggedIn">Dashbord <i class="bi bi-speedometer2"></i> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="courses">Courses</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="!service.isloggedIn" class="nav-link" routerLink="thirdof">Register</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="!service.isloggedIn" class="nav-link" routerLink="loginstudent">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="about">About</a>
+      </li>
+      
+     <!----<li> <a class="nav-link">{{service.loggedStudent}}</a></li>-->
+
+      <ul *ngIf="service.isloggedIn"  class="navbar-nav ml-auto" >
+          <img src="../../../assets/img/user3.png" sizes="20px" alt="..." height="36">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              {{service.loggedStudent}}</a>
+            <div class="dropdown-menu" style="border-radius: 20px;">
+              <a class="dropdown-item" href="#" routerLink="userprofile">Profile</a>
+              <a class="dropdown-item" href="#">My courses</a>
+              <a class="dropdown-item" (click) = "onLogout()">logout</a>
+          
+            </div>
+          </li>
+        </ul>
+    </ul>
+  </div>
+  
+</nav>
+
+<header *ngIf="service.isloggedIn">
+  
+  <div class="px-3 py-2 border-bottom mb-3" class="px-3 py-2  text-white" style="background-color: lightblue;">
+    <div class="container d-flex flex-wrap justify-content-center">
+      
+      <ul class="navbar-nav ml-1" >
+        <li class="nav-item active" >
+          <a class="nav-link" style="color: #261d51;  text-decoration: underline ;" routerLink="userprofile">My profile <i class="bi bi-person-circle"></i></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-1">
+        <li class="nav-item active">
+          <a class="nav-link" style="color: #261d51;  text-decoration: underline;" routerLink="billing">My bills <i class="bi bi-cash-coin"></i></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-1">
+        <li class="nav-item active">
+          <a class="nav-link" style="color: #261d51;  text-decoration: underline;" routerLink="messages">My messages <i class="bi bi-envelope" ></i></a>
+        </li>
+      </ul>
+      <form class="col-12 col-lg-8 mb-2 mb-lg-0 me-lg-auto" >
+        <input type="search" class="form-control" placeholder="Search..." aria-label="Search" style="border-radius: 20px;">
+      </form>
+
+      
+    </div>
+  </div>
+</header>

@@ -1,0 +1,26 @@
+<section class="loginstudent">
+    <div class="login col-lg-6 m-auto shadow-lg">
+      <div class="alert alert-danger" *ngIf="erreur==1">
+        <strong>login ou mot de passe erronés..</strong>
+      </div>
+        <form #myForm="ngForm" (ngSubmit)="onLoggedin()">
+
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address<span class="text-danger">*</span></label>
+              <input name="username" [(ngModel)]="student.email"  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            
+              
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password<span class="text-danger">*</span></label>
+              <input name="password" [(ngModel)]="student.password"  type="password" class="form-control" id="exampleInputPassword1">
+           
+              
+            </div>
+            <button  type="submit" (click)="onLoggedin()" class="bv col-lg-12">Log In</button>
+          </form>
+
+    </div>
+</section>

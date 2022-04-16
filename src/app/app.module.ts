@@ -33,6 +33,15 @@ import { UserprofileComponent } from './pages/userprofile/userprofile.component'
 import {MatInputModule} from '@angular/material/input';
 import { BillingComponent } from './pages/billing/billing.component';
 import { MessagesComponent } from './pages/messages/messages.component';
+import { FavoritesStudentComponent } from './pages/favorites-student/favorites-student.component';
+import { FavoritesFormerComponent } from './pages/favorites-former/favorites-former.component';
+import { MessagesFormerComponent } from './pages/messages-former/messages-former.component';
+import { BillingFormerComponent } from './pages/billing-former/billing-former.component';
+import { PlanningFormerComponent } from './pages/planning-former/planning-former.component';
+import { HomeFormerComponent } from './pages/home-former/home-former.component';
+import { DashbordFormerComponent } from './pages/dashbord-former/dashbord-former.component';
+import { ProfprofileComponent } from './pages/profprofile/profprofile.component';
+import { PlanningStudentComponent } from './planning-student/planning-student.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,6 +68,15 @@ import { MessagesComponent } from './pages/messages/messages.component';
     UserprofileComponent,
     BillingComponent,
     MessagesComponent,
+    FavoritesStudentComponent,
+    FavoritesFormerComponent,
+    MessagesFormerComponent,
+    BillingFormerComponent,
+    PlanningFormerComponent,
+    HomeFormerComponent,
+    DashbordFormerComponent,
+    ProfprofileComponent,
+    PlanningStudentComponent,
     
   ],
   imports: [

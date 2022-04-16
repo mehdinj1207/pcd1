@@ -20,6 +20,15 @@ import { HomeStudentComponent } from './pages/home-student/home-student.componen
 import { UserprofileComponent } from './pages/userprofile/userprofile.component';
 import { BillingComponent } from './pages/billing/billing.component';
 import { MessagesComponent } from './pages/messages/messages.component';
+import { PlanningFormerComponent } from './pages/planning-former/planning-former.component';
+import { BillingFormerComponent } from './pages/billing-former/billing-former.component';
+import { DashbordFormerComponent } from './pages/dashbord-former/dashbord-former.component';
+import { FavoritesFormerComponent } from './pages/favorites-former/favorites-former.component';
+import { FavoritesStudentComponent } from './pages/favorites-student/favorites-student.component';
+import { MessagesFormerComponent } from './pages/messages-former/messages-former.component';
+import { ProfprofileComponent } from './pages/profprofile/profprofile.component';
+import { PlanningStudentComponent } from './planning-student/planning-student.component';
+import { HomeFormerComponent } from './pages/home-former/home-former.component';
 
 const routes: Routes = [{path:"",component:HomeComponent   },
 {path:"home",component:HomeComponent   },
@@ -49,7 +58,26 @@ const routes: Routes = [{path:"",component:HomeComponent   },
 {path:"home-student/userprofile",component:UserprofileComponent},
 {path:"userprofile",component:UserprofileComponent},
 {path:"billing",component:BillingComponent},
-{path:"messages",component:MessagesComponent}
+{path:"messages",component:MessagesComponent},
+{path:"studenthome/courses",component:CoursesComponent},
+{path:"home-former/planningformer",component:PlanningFormerComponent},
+{path:"billing-former",component:BillingFormerComponent},
+{path:"dashbord-former",component:DashbordFormerComponent},
+{path:"favorites-former",component:FavoritesFormerComponent},
+{path:"favorites-student",component:FavoritesStudentComponent},
+{path:"messagesformer",component:MessagesFormerComponent},
+{path:"planningformer",component:PlanningFormerComponent},
+{path:"profprofile",component:ProfprofileComponent},
+{path:"studenthome/billing",component:BillingComponent},
+{path:"studenthome/messages",component:MessagesComponent},
+{path:"studenthome/favorites-student",component:FavoritesStudentComponent},
+{path:"studenthome/planning-student",component:PlanningStudentComponent},
+{path:"home-former/favorites-former",component:FavoritesFormerComponent},
+{path:"home-former/messages-former",component:MessagesFormerComponent},
+{path:"home-former/planning-former",component:PlanningFormerComponent},
+{path:"dashbord-former",component:DashbordFormerComponent},
+{path:"home-former",component:HomeFormerComponent},
+{path:"studenthome/userprofile",component:UserprofileComponent}
 
 
 ];
